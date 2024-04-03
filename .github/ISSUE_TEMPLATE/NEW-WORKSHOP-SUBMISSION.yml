@@ -1,0 +1,114 @@
+name: Sway Workshop Proposal Submission
+description: Submit your Sway workshop proposal for the workshop bounty program.
+title: "Workshop Proposal Title: "
+labels: ["workshop-submission", "review-pending"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for your interest in contributing to the Sway Workshop Bounty Program! Please fill out the following details for your workshop proposal."
+
+  - type: input
+    id: title
+    attributes:
+      label: Workshop Title
+      description: "What is the proposed title of your workshop?"
+      placeholder: "Enter the proposed title here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Workshop Summary
+      description: "Provide a brief summary of the planned workshop."
+      placeholder: "Enter your summary here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevance-to-fuel
+    attributes:
+      label: Relevance to Fuel
+      description: "Explain how your workshop idea relates to Fuel."
+      placeholder: "Describe the relevance here"
+    validations:
+      required: true
+
+
+  - type: dropdown
+    id: previous-experience
+    attributes:
+      label: Previous Workshop or Talk Experience
+      description: "Have you delivered workshops or talks before?"
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: textarea
+    id: experience-details
+    attributes:
+      label: Details of Previous Experience
+      description: "If you have previous experience, please provide details about the workshops or talks you have delivered."
+      placeholder: "Enter details here"
+
+  - type: textarea
+    id: workshop-outline
+    attributes:
+      label: Workshop Outline
+      description: "Provide an outline of your workshop proposal."
+      placeholder: "Outline the key components of your workshop here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: workshop-goals
+    attributes:
+      label: Workshop Goals
+      description: "What will the learner walk away with after attending your workshop? Describe the goals."
+      placeholder: "Detail the workshop goals here"
+    validations:
+      required: true
+
+  - type: textarea
+    id: github-activity-links
+    attributes:
+      label: Links to GitHub Activity
+      description: "Provide links to any Fuel GitHub activity you've done, like your own projects or contributions to Fuel open source projects."
+      placeholder: "Enter links here"
+
+  - type: dropdown
+    id: fuel-developer-champion
+    attributes:
+      label: Fuel Developer Champion Status
+      description: "Are you a current Fuel Developer Champion?"
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "Please review the requirements for the bounty here: [Technical Writing Bounty Requirements](https://github.com/fuel-champions/technical-writing-bounty)"
+
+  - type: checkboxes
+    id: understanding-requirements
+    attributes:
+      label: Understanding of Requirements
+      description: "Confirm that you understand the requirements for the bounty."
+      options:
+        - label: "I have read and understood the requirements for the Technical Writing Bounty."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: payment-agreement
+    attributes:
+      label: Payment Agreement
+      description: "Confirm that you understand if your workshop is accepted and proof of completion is submitted, you will be paid via the [Request](https://www.request.finance) platform and must comply with their requirements to receive payment to the wallet address you provide."
+      options:
+        - label: "I understand that if my workshop is accepted and proof of completion is submitted, I will be paid via the Request platform."
+    validations:
+      required: true
